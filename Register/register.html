@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Register Form</h2>
+        <form action="/submit_form" method="post">
+            <div class="form-username">
+                <label for="username">Username</label><br>
+                <input type="text" id="username" required minlength="6" maxlength="18">
+            </div>
+            <div class="form-password">
+                <label for="password">Password</label><br>
+                <input type="text" id="password" required minlength="6" maxlength="18">
+            </div>
+            <div class="form-email">
+                <label for="email">Email</label><br>
+                <input type="email" id="email" required>
+            </div>
+            <div class="form-remember">
+                <label for="remember">Remember me</label><br>
+                <input type="checkbox" id="remember" name="remember">
+            </div>
+            <input class="form-submit" type="submit" value="Register">
+        </form>
+    </div>
+</body>
+</html>
