@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mainpage</title>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="homepage.css">
+    <!-- Custom JS -->
+    <script src="homepage.js"></script>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header class="header-section">
+        <!-- Navbar -->
+        <div class="container-navigation">
+            <nav class="navbar navbar-expand-lg">
+                <a class="navbar-brand" href="../MainPage/homepage.html">Storily</a>
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link" href="../MainPage/homepage.html">Home</a>
+                    <a class="nav-link" href="../GalleryPage/gallery.html">Gallery</a>
+                    <a class="nav-link" href="../AlbumsPage/albums.html">Albums</a>
+                    <a class="nav-link" href="../EditingPage/editing.html">Add/Delete</a>
+                    <a class="nav-link" href="#">Sign In</a>
+                    <a class="nav-link" href="#">Sign Up</a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+    <main class="main-section">
+        <div class="container-main">
+            <div class="row">
+                <!-- Introduction -->
+                <div class="welcome col-md-12">
+                    <h1 class="introduction-storily">Welcome to Storily</h1>
+                    <p>Storily is a website where you can create, share, and discover your stories. Upload your images, write captions, and share them with others.</p>
+                </div>
+                <!-- Webpage Navigation -->
+                <div class="webpage-home-nav">
+                    <a href="../GalleryPage/gallery.html" class="webpage-link">
+                        <div class="webpage-switcher-container">
+                            <img src="https://images.unsplash.com/photo-1552168324-d612d77725e3" alt="Gallery Image" class="image-decoration">
+                            <div class="label-switcher-container">
+                                <p>Gallery</p>
+                                <p>Go and see your beautiful photos that you stored on our website!</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="../AlbumsPage/albums.html" class="webpage-link">
+                        <div class="webpage-switcher-container">
+                            <img src="https://images.unsplash.com/photo-1506097425191-7ad538b29cef" alt="Albums Image" class="image-decoration">
+                            <div class="label-switcher-container">
+                                <p>Albums</p>
+                                <p>Check out the albums that you have been creating on our website!</p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="../EditingPage/editing.html" class="webpage-link">
+                        <div class="webpage-switcher-container">
+                            <img src="https://images.unsplash.com/photo-1542435503-956c469947f6" alt="Editing Image" class="image-decoration">
+                            <div class="label-switcher-container">
+                                <p>Editing</p>
+                                <p>Add new images, edit your stories, and delete them on our website!</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <!-- Features -->
+                <div class="features-container">
+                    <div class="feature-box col-lg-4">
+                        <i class="fas fa-check-circle fa-bounce"></i>
+                        <h3 class="feature-title">Easy to use.</h3>
+                        <p>Storily is designed to be easy to use. You can upload images, write captions, and share them with others.</p>
+                        </div>
+                    <div class="feature-box col-lg-4">
+                        <i class="fas fa-heart fa-beat"></i>
+                        <h3 class="feature-title">Guaranteed to work.</h3>
+                        <p>Storily is built with security and reliability in mind. We've tested it with thousands of users and it's always working.</p>
+                    </div>
+                    <div class="feature-box col-lg-4">
+                        <i class="fas fa-bullseye fa-shake"></i>
+                        <h3 class="feature-title">Elite Clientele.</h3>
+                        <p>Storily is for everyone. Whether you're a beginner or a professional photographer, Storily has everything you need.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+<!-- Subscriptions  -->
+<section class="pricing white-section">
+    <h2>Subscriptions for our website!</h2>
+    <p>Simple and affordable price for everybody.</p>
+
+    <div class="row">
+        <div class="pricing-col col-md-6 col-lg-4">
+            <div class="card the-shadow rounded">
+                <div class="card-header the-shadow">
+                    <h3>Standard</h3>
+                </div>
+                <div class="card-body">
+                    <h2>Free</h2>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Upload up to 100 photos</li>
+                        <li><i class="fas fa-check"></i> Basic editing tools</li>
+                        <li><i class="fas fa-check"></i> Create 3 albums</li>
+                        <li><i class="fas fa-times"></i> No watermark</li>
+                        <li><i class="fas fa-times"></i> No Priority</li>
+                    </ul>
+                    <button type="button" class="btn btn-dark btn-lg w-100 the-shadow">Sign up</button>
+                </div>
+              </div>
+        </div>
+        <div class="pricing-col col-md-6 col-lg-4">
+            <div class="card the-shadow rounded">
+                <div class="card-header the-shadow">
+                    <h3>Elite</h3>
+                </div>
+                <div class="card-body">
+                    <h2>$49 / mo</h2>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Unlimited photo uploads</li>
+                        <li><i class="fas fa-check"></i> Advanced editing tools</li>
+                        <li><i class="fas fa-check"></i> Unlimited albums</li>
+                        <li><i class="fas fa-check"></i> No watermark</li>
+                        <li><i class="fas fa-check"></i> Priority support</li>
+                    </ul>
+                    <button type="button" class="btn btn-dark btn-lg w-100 the-shadow">Sign up</button>
+                </div>
+              </div>
+        </div>
+        <div class="pricing-col col-lg-4">
+            <div class="card the-shadow rounded">
+                <div class="card-header the-shadow">
+                    <h3>Expert</h3>
+                </div>
+                <div class="card-body">
+                    <div class="pricing-badge">Most Popular</div>
+                    <h2>$99 / mo</h2>
+                    <ul class="pricing-features">
+                        <li><i class="fas fa-check"></i> Everything in Elite</li>
+                        <li><i class="fas fa-check"></i> Professional editing tools</li>
+                        <li><i class="fas fa-check"></i> AI-powered enhancements</li>
+                        <li><i class="fas fa-check"></i> Custom branding</li>
+                        <li><i class="fas fa-check"></i> 24/7 priority support</li>
+                    </ul>
+                    <button type="button" class="btn btn-dark btn-lg w-100 the-shadow">Sign up</button>
+                </div>
+              </div>
+        </div>
+    </div>
+</section>
+
+    <footer class="colored-section" id="footer">
+        <div class="container-footer">
+            <p>Copyright &copy; 2024 Storily</p>
+            <div class="social-media-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-pinterest"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Storily</title>
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="gallery.css">
+    <!-- Custom JS -->
+    <script src="gallery.js"></script>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" 
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header class="header-section">
+        <!-- Navbar -->
+        <div class="container-navigation">
+            <nav class="navbar navbar-expand-lg">
+                <a class="navbar-brand" href="../MainPage/homepage.html">Storily</a>
+                <div class="navbar-nav ms-auto">
+                    <a class="nav-link" href="../MainPage/homepage.html">Home</a>
+                    <a class="nav-link" href="../GalleryPage/gallery.html">Gallery</a>
+                    <a class="nav-link" href="../AlbumsPage/albums.html">Albums</a>
+                    <a class="nav-link" href="../EditingPage/editing.html">Add/Delete</a>
+                    <a class="nav-link" href="#">Sign In</a>
+                    <a class="nav-link" href="#">Sign Up</a>
+                </div>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main class="main-section">
+        <div class="container-main">
+            <!-- Gallery Header -->
+            <div class="welcome col-md-12">
+                <h1 class="introduction-storily">Your Gallery</h1>
+                <p>Browse through your collection of memories and stories.</p>
+            </div>
+
+            <!-- Gallery Controls -->
+            <div class="gallery-controls">
+                <button class="btn btn-dark"><i class="fas fa-filter"></i> Filter</button>
+                <button class="btn btn-dark"><i class="fas fa-sort"></i> Sort</button>
+                <button class="btn btn-dark"><i class="fas fa-th-large"></i> View</button>
+                <div class="search-box">
+                    <input type="text" class="form-control" placeholder="Search images...">
+                    <i class="fas fa-search"></i>
+                </div>
+            </div>
+
+            <!-- Gallery Grid -->
+            <div class="gallery-grid">
+                <!-- Example Gallery Items -->
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1552168324-d612d77725e3" alt="Nature Photo">
+                    <div class="gallery-item-overlay">
+                        <h3>Summer Sunset</h3>
+                        <p>Beautiful sunset captured at the beach</p>
+                        <div class="gallery-item-actions">
+                            <i class="fas fa-heart"></i>
+                            <i class="fas fa-share"></i>
+                            <i class="fas fa-edit"></i>
+                            <i class="fas fa-trash"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1506097425191-7ad538b29cef" alt="Urban Photo">
+                    <div class="gallery-item-overlay">
+                        <h3>City Lights</h3>
+                        <p>Night view of the city skyline</p>
+                        <div class="gallery-item-actions">
+                            <i class="fas fa-heart"></i>
+                            <i class="fas fa-share"></i>
+                            <i class="fas fa-edit"></i>
+                            <i class="fas fa-trash"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="gallery-item">
+                    <img src="https://images.unsplash.com/photo-1542435503-956c469947f6" alt="Portrait Photo">
+                    <div class="gallery-item-overlay">
+                        <h3>Portrait</h3>
+                        <p>Professional portrait photography</p>
+                        <div class="gallery-item-actions">
+                            <i class="fas fa-heart"></i>
+                            <i class="fas fa-share"></i>
+                            <i class="fas fa-edit"></i>
+                            <i class="fas fa-trash"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pagination -->
+            <nav aria-label="Gallery pagination" class="gallery-pagination">
+                <ul class="pagination justify-content-center">
+                    <li class="page-item disabled">
+                        <a class="page-link" href="#" tabindex="-1" aria-disabled="true">Previous</a>
+                    </li>
+                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                    <li class="page-item"><a class="page-link" href="#">3</a></li>
+                    <li class="page-item">
+                        <a class="page-link" href="#">Next</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </main>
+
+    <footer class="colored-section" id="footer">
+        <div class="container-footer">
+            <p>Copyright &copy; 2024 Storily</p>
+            <div class="social-media-icons">
+                <a href="#"><i class="fab fa-facebook"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-pinterest"></i></a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

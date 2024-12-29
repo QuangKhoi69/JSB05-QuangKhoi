@@ -1,0 +1,170 @@
+/* Import the common styles from homepage.css */
+@import url('../MainPage/homepage.css');
+
+.colored-section {
+    width: 100%;
+    background-color: lightgrey;
+}
+
+.navbar {
+    width: 100%;
+    max-width: 100%;
+    margin: 0;
+    padding: 0 20px;
+    flex-wrap: wrap;
+}
+
+.navbar-nav {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    list-style: none;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.nav-item {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-brand {
+    margin-left: 20px;
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-link {
+    position: relative;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+    opacity: 0.75;
+    margin: 0 15px;
+    margin-right: 15px;
+    text-align: right;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover {
+    opacity: 1;
+    color: #fff;
+    transform: translateY(-2px);
+}
+
+.nav-link::after {
+    content: attr(data-info);
+    position: absolute;
+    bottom: -30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.8);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    white-space: nowrap;
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.3s ease;
+}
+
+.nav-link:hover::after {
+    opacity: 1;
+    visibility: visible;
+    bottom: -25px;
+}
+
+.nav-link:focus{
+    opacity: 1;
+    color: #fff;
+}
+
+.main-section {
+    padding: 20px;
+    background-color: white;
+    text-align: center;
+}
+
+.welcome {
+    font-size: clamp(0.875rem, 2vw, 1rem);
+    font-weight: bold;
+    margin: 20px auto;
+    background-color: lightgrey;
+    padding: 20px;
+    border-radius: 10px;
+    width: min(80%, 1200px);
+    height: auto;
+}
+
+.introduction-storily {
+    font-size: clamp(1rem, 2.5vw, 1.2rem);
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.upload-form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f5f5f5;
+    border-style: solid;
+    border-color: grey transparent;
+    border-width: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: border-color 0.3s ease;
+}
+
+.upload-form:hover {
+    border-color: #333;
+}
+
+.form-label {
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 8px;
+}
+
+.form-control {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 15px;
+    transition: border-color 0.3s ease;
+}
+
+.form-control:focus {
+    border-color: #666;
+    outline: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 1.1rem;
+    transition: transform 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    .upload-form {
+        margin: 20px;
+        padding: 15px;
+    }
+    
+    .welcome {
+        margin: 10px;
+        padding: 15px;
+    }
+}
