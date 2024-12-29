@@ -1,3 +1,20 @@
+body {
+    background-image: url('https://images.unsplash.com/photo-1507643179773-3e975d7ac515?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YXJ0JTIwZ2FsbGVyeXxlbnwwfHwwfHx8MA%3D%3D');
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://images.unsplash.com/photo-1507643179773-3e975d7ac515?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8YXJ0JTIwZ2FsbGVyeXxlbnwwfHwwfHx8MA%3D%3D');
+    background-position: center;
+    background-attachment: fixed;
+    color: white;
+}
+.container-footer {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+.social-media-icons a {
+    color: white;
+    margin: 0 10px;
+}
+
 .header-section {
     width: 100%;
     background-color: lightgrey;
@@ -315,16 +332,26 @@
     text-align: center;
 }
 
+.pricing h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: white;
+}
+
 .pricing h2 {
     font-size: 2.5rem;
     font-weight: bold;
     margin-bottom: 15px;
+    color: white;
 }
 
 .pricing p {
-    color: #666;
+    color: white;
     font-size: 1.2rem;
     margin-bottom: 50px;
+    line-height: 1.6;
+
 }
 
 .pricing-col {
