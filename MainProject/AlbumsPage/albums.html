@@ -19,7 +19,9 @@
         <!-- Navbar -->
         <div class="container-navigation">
             <nav class="navbar navbar-expand-lg">
-                <a class="navbar-brand" href="../MainPage/homepage.html">Storily</a>
+                <a class="navbar-brand" href="../MainPage/homepage.html">
+                    <img src="../Images/bg-000f32d7-7487-4370-9bb9-9c66292d455c.png" alt="Storily Logo" class="logo">
+                </a>
                 <div class="navbar-nav ms-auto">
                     <a class="nav-link" href="../MainPage/homepage.html">Home</a>
                     <a class="nav-link" href="../GalleryPage/gallery.html">Gallery</a>
@@ -38,30 +40,92 @@
 
     <main class="main-section">
         <div class="container-main">
-            <!-- Albums Header -->
+            <!-- Enhanced Albums Header -->
             <div class="welcome col-md-12">
-                <h1 class="introduction-storily">Your Albums</h1>
-                <p>Organize your memories into beautiful collections.</p>
+                <h1 class="introduction-storily">Your Photo Albums</h1>
+                <p class="lead">Create beautiful collections and organize your precious memories.</p>
+                <div class="stats-row">
+                    <div class="stat-item">
+                        <i class="fas fa-images"></i>
+                        <span>12 Albums</span>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-photo-film"></i>
+                        <span>234 Photos</span>
+                    </div>
+                    <div class="stat-item">
+                        <i class="fas fa-share-alt"></i>
+                        <span>5 Shared</span>
+                    </div>
+                </div>
             </div>
 
-            <!-- Album Controls -->
+            <!-- Enhanced Album Controls -->
             <div class="album-controls">
-                <button class="btn btn-dark" id="createAlbumBtn">
-                    <i class="fas fa-plus"></i> Create New Album
-                </button>
+                <div class="control-group">
+                    <button class="btn btn-dark" id="createAlbumBtn">
+                        <i class="fas fa-plus"></i> Create New Album
+                    </button>
+                    <div class="search-box">
+                        <input type="text" class="form-control" placeholder="Search albums...">
+                        <i class="fas fa-search"></i>
+                    </div>
+                </div>
+                <div class="view-options">
+                    <button class="btn btn-outline-dark active">
+                        <i class="fas fa-th-large"></i>
+                    </button>
+                    <button class="btn btn-outline-dark">
+                        <i class="fas fa-list"></i>
+                    </button>
+                </div>
             </div>
 
-            <!-- Albums Grid -->
+            <!-- Albums Grid with More Examples -->
             <div class="albums-grid">
-                <!-- Example Album (will be dynamic in real implementation) -->
-                <div class="album-card">
+                <!-- Featured Album -->
+                <a href="../DetaillsPage/details.html" class="album-card featured">
+                    <div class="featured-badge">
+                        <i class="fas fa-star"></i> Featured
+                    </div>
                     <div class="album-preview">
-                        <img src="https://via.placeholder.com/300" alt="Album Cover">
+                        <img src="https://blog.italotreno.com/wp-content/uploads/2018/07/Ecco-le-spiagge-Bandiera-Blu-2018-della-Campania-tuffiamoci-Costiera-Amalfitana-1140x660.jpg" alt="Album Cover">
                         <span class="photo-count"><i class="fas fa-image"></i> 12</span>
                     </div>
                     <div class="album-info">
-                        <h3>Vacation 2024</h3>
-                        <p>Summer memories in Italy</p>
+                        <h3>Summer Memories 2024</h3>
+                        <p>Beautiful moments from our Italian vacation</p>
+                        <div class="album-meta">
+                            <span><i class="far fa-calendar-alt"></i> Updated 2 days ago</span>
+                            <span><i class="fas fa-lock-open"></i> Public</span>
+                        </div>
+                        <div class="album-actions">
+                            <button class="btn btn-sm btn-outline-dark" title="Edit">
+                                <i class="fas fa-edit"></i>
+                            </button>
+                            <button class="btn btn-sm btn-outline-dark" title="Share">
+                                <i class="fas fa-share"></i>
+                            </button>
+                            <button class="btn btn-sm btn-outline-dark" title="Delete">
+                                <i class="fas fa-trash"></i>
+                            </button>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Regular Albums -->
+                <div class="album-card">
+                    <div class="album-preview">
+                        <img src="https://goop-img.com/wp-content/uploads/2016/12/holidays-GS01061634.jpg" alt="Album Cover">
+                        <span class="photo-count"><i class="fas fa-image"></i> 24</span>
+                    </div>
+                    <div class="album-info">
+                        <h3>Family Gatherings</h3>
+                        <p>Special moments with loved ones</p>
+                        <div class="album-meta">
+                            <span><i class="far fa-calendar-alt"></i> Last week</span>
+                            <span><i class="fas fa-lock"></i> Private</span>
+                        </div>
                         <div class="album-actions">
                             <button class="btn btn-sm btn-outline-dark">
                                 <i class="fas fa-edit"></i>
@@ -75,6 +139,16 @@
                         </div>
                     </div>
                 </div>
+
+                <!-- Add more album cards here -->
+            </div>
+
+            <!-- Empty State for New Users -->
+            <div class="empty-state" style="display: none;">
+                <i class="fas fa-photo-album fa-3x"></i>
+                <h3>No Albums Yet</h3>
+                <p>Start creating your first album to organize your photos!</p>
+                <button class="btn btn-dark">Create Your First Album</button>
             </div>
         </div>
     </main>

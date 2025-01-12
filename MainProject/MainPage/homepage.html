@@ -19,14 +19,16 @@
         <!-- Navbar -->
         <div class="container-navigation">
             <nav class="navbar navbar-expand-lg">
-                <a class="navbar-brand" href="../MainPage/homepage.html">Storily</a>
+                <a class="navbar-brand" href="../MainPage/homepage.html">
+                    <img src="../Images/bg-000f32d7-7487-4370-9bb9-9c66292d455c.png" alt="Storily Logo" class="logo">
+                </a>
                 <div class="navbar-nav ms-auto">
                     <a class="nav-link" href="../MainPage/homepage.html">Home</a>
                     <a class="nav-link" href="../GalleryPage/gallery.html">Gallery</a>
                     <a class="nav-link" href="../AlbumsPage/albums.html">Albums</a>
                     <a class="nav-link" href="../EditingPage/editing.html">Add/Delete</a>
-                    <a class="nav-link" href="#">Sign In</a>
-                    <a class="nav-link" href="#">Sign Up</a>
+                    <a class="nav-link" href="../SignInPage/signin.html">Sign In</a>
+                    <a class="nav-link" href="../SignUpPage/signup.html">Sign Up</a>
                 </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" 
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -94,6 +96,55 @@
             </div>
         </div>
     </main>
+
+<!-- Testimonials -->
+<section class="testimonials">
+    <h2>What Our Users Say</h2>
+    <div class="testimonial-container">
+        <a href="#testimonial3" class="testimonial-btn prev-btn">
+            <i class="fas fa-chevron-left"></i>
+        </a>
+        
+        <div class="testimonial-content">
+            <div class="testimonial-slide" id="testimonial1">
+                <div class="user-image">
+                    <img src="https://randomuser.me/api/portraits/women/1.jpg" alt="User">
+                </div>
+                <p class="testimonial-text">"Storily has transformed how I share my photography. The interface is intuitive and the features are exactly what I needed!"</p>
+                <p class="user-name">Sarah Johnson</p>
+                <p class="user-title">Professional Photographer</p>
+            </div>
+
+            <div class="testimonial-slide" id="testimonial2">
+                <div class="user-image">
+                    <img src="https://randomuser.me/api/portraits/men/1.jpg" alt="User">
+                </div>
+                <p class="testimonial-text">"The album organization features are fantastic. I can easily manage thousands of photos without any hassle."</p>
+                <p class="user-name">Michael Chen</p>
+                <p class="user-title">Travel Blogger</p>
+            </div>
+
+            <div class="testimonial-slide" id="testimonial3">
+                <div class="user-image">
+                    <img src="https://randomuser.me/api/portraits/women/2.jpg" alt="User">
+                </div>
+                <p class="testimonial-text">"I love the AI-powered enhancements. They make my photos look professional with just one click!"</p>
+                <p class="user-name">Emma Davis</p>
+                <p class="user-title">Digital Artist</p>
+            </div>
+        </div>
+
+        <a href="#testimonial2" class="testimonial-btn next-btn">
+            <i class="fas fa-chevron-right"></i>
+        </a>
+    </div>
+    
+    <div class="testimonial-dots">
+        <a href="#testimonial1" class="dot"></a>
+        <a href="#testimonial2" class="dot"></a>
+        <a href="#testimonial3" class="dot"></a>
+    </div>
+</section>
 
 <!-- Subscriptions  -->
 <section class="pricing white-section" id="pricing-intro">

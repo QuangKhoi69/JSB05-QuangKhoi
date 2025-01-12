@@ -100,7 +100,6 @@
     font-size: 1.1rem;
 }
 
-/* Responsive adjustments */
 @media (max-width: 768px) {
     .albums-grid {
         grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
@@ -125,7 +124,7 @@
     }
 }
 
-/* Album creation modal styles */
+
 .modal {
     display: none;
     position: fixed;
@@ -168,4 +167,137 @@
     display: flex;
     justify-content: flex-end;
     gap: 10px;
+}
+
+.stats-row {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin: 20px 0;
+}
+
+.stat-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.1rem;
+}
+
+.stat-item i {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.album-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.control-group {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.search-box {
+    position: relative;
+    min-width: 250px;
+}
+
+.search-box input {
+    padding-right: 35px;
+}
+
+.search-box i {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #666;
+}
+
+.view-options {
+    display: flex;
+    gap: 10px;
+}
+
+.featured {
+    grid-column: span 2;
+    position: relative;
+}
+
+.featured-badge {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    background: #ffd700;
+    color: #333;
+    padding: 5px 10px;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    z-index: 1;
+}
+
+.album-meta {
+    display: flex;
+    gap: 15px;
+    margin: 10px 0;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+.empty-state {
+    text-align: center;
+    padding: 40px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    margin: 20px 0;
+}
+
+.empty-state i {
+    color: #ddd;
+    margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+    .featured {
+        grid-column: span 1;
+    }
+
+    .stats-row {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .album-controls {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .control-group {
+        width: 100%;
+        flex-direction: column;
+    }
+
+    .search-box {
+        width: 100%;
+    }
+}
+
+.album-card.featured {
+    cursor: pointer;
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+.album-card.featured:hover {
+    text-decoration: none;
+    color: inherit;
 }

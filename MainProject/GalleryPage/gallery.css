@@ -1,7 +1,5 @@
-/* Import the common styles from homepage.css */
 @import url('../MainPage/homepage.css');
 
-/* Gallery specific styles */
 .gallery-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
@@ -78,6 +76,8 @@
     align-items: center;
 }
 
+
+
 .gallery-controls button {
     min-width: 120px;
 }
@@ -99,7 +99,6 @@
     }
 }
 
-/* Search box styles */
 .search-box {
     position: relative;
     min-width: 200px;
@@ -117,7 +116,6 @@
     color: #666;
 }
 
-/* Pagination styles */
 .gallery-pagination {
     margin-top: 40px;
     margin-bottom: 20px;
